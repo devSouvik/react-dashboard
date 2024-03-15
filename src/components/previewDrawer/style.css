@@ -1,0 +1,12 @@
+.preview-drawer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    min-width: 50%;
+    border: 1px solid black;
+    min-height: 39rem;
+    padding: 0.25rem;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}

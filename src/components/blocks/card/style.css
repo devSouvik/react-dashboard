@@ -1,0 +1,13 @@
+.card-element {
+    min-width: 20rem;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #ffffff;
+}
