@@ -4,11 +4,11 @@ import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
 interface iComp {
-    id: number | string;
+    id: number;
     name: string;
 }
 
-const DrawerComponent = ({ comp, id }) => {
+const DrawerComponent = ({ comp, id }: { comp: iComp; id: number }) => {
     //
     const { setNodeRef, attributes, listeners, transform, transition } =
         useSortable({ id });

@@ -1,0 +1,14 @@
+.para-content {
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.para-content:hover {
+    background-color: #deedfd;
+    border: 1px #479ff6 solid;
+    filter: opacity(70%);
+    cursor: pointer;
+}

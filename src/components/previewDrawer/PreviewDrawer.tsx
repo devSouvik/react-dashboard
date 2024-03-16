@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Card from "../blocks/card/Card.tsx";
 import Header from "../blocks/header/Header.tsx";
+import Paragraph from "../blocks/paragraph/Paragraph.tsx";
 
 const PreviewDrawer = ({ components }) => {
     return (
@@ -19,7 +20,9 @@ const PreviewDrawer = ({ components }) => {
                 if (component.name === "Header") {
                     return <Header content={component.content} />;
                 }
-                // return <div className="" key={index}>{component.name}</div>;
+                if (component.name === "Paragraph") {
+                    return <Paragraph content={component.content} />;
+                }
             })}
         </div>
     );

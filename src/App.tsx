@@ -27,9 +27,45 @@ function App() {
             name: "Header",
             content: "this is the header",
         },
+        { id: 5, name: "Card", title: "card title", desc: "card description" },
+        {
+            id: 6,
+            name: "Card",
+            title: "card title 1",
+            desc: "card description 1",
+        },
+        {
+            id: 7,
+            name: "Card",
+            title: "card title 2",
+            desc: "card description 2",
+        },
+        // {
+        //     id: 8,
+        //     name: "Header",
+        //     content: "this is the header",
+        // },
+        // { id: 9, name: "Card", title: "card title", desc: "card description" },
+        // {
+        // id: 10,
+        // name: "Card",
+        // title: "card title 1",
+        // desc: "card description 1",
+        // },
+        // {
+        //     id: 11,
+        //     name: "Card",
+        //     title: "card title 2",
+        //     desc: "card description 2",
+        // },
+        // {
+        //     id: 12,
+        //     name: "Header",
+        //     content: "this is the header",
+        // },
     ]);
 
-    function getComponentsPos(id: any) {
+    function getComponentsPos(id: number | string) {
         return components.findIndex((component) => component.id === id);
     }
 
@@ -53,7 +89,10 @@ function App() {
                     collisionDetection={closestCorners}
                     onDragEnd={handleDragEnd}
                 >
-                    <ComponentsDrawer components={components} />
+                    <ComponentsDrawer
+                        components={components}
+                        setComponents={setComponents}
+                    />
                 </DndContext>
                 <PreviewDrawer components={components} />
                 <PropertiesDrawer />
